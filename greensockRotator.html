@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/InertiaPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js"></script>
+   
+    <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+  background-color:#333;
+}
+#change {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  margin-top: -100px;
+  margin-left: -100px;
+ 
+  cursor: pointer;
+}
+
+#change .holder {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  margin-left: -20px;
+}
+#change a {
+  position: absolute;
+  top: -500px;
+  left: -120px;
+  height: 20px;
+  width: 40px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+}
+
+
+.holder img {
+  
+ border-radius:10px;
+  
+}
+    </style>
+</head>
+<body>
+    <div id='change'>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        <div class='holder'><a href='index.html' id='button0'><img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$750x320$" width="250" style="transform:rotate(90deg)"></a></div>
+        
+      </div>
+
+
+      <script>
+        // setup
+
+
+
+var nav6 = $('#change').children('.holder').each(function(i) {
+TweenLite.set(this, {rotation:30*i});
+}).end();
+
+var tl = new TimelineLite({paused:true});
+var nav = document.getElementById('change')
+
+var gorilla = gsap.to(nav, 60, {rotation:"360", ease:Linear.easeNone, repeat:-1});
+
+
+
+
+$(document).on("mouseenter", ".holder img", function() {
+    tl.pause();
+}).on("mouseleave", ".holder a", function(){
+    tl.play();
+});
+
+
+const draggable = Draggable.create("#change", {
+  type: "rotation",
+  inertia: true,
+  onDrag: function() {
+  gorilla.pause
+  }
+});
+      </script>
+</body>
+</html>

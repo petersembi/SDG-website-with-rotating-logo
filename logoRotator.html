@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js"></script>
+   
+    <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+  background-color:#333;
+  overflow-x: hidden;
+}
+.rotatorImage {
+  width: 140;
+  transform:rotate(-10deg);
+}
+#change {
+  position: absolute;
+  top: 70%;
+  left: 85%;
+  width: 10px;
+  height: 10px;
+  margin-top: -100px;
+  margin-left: -100px;
+ 
+  cursor: pointer;
+  
+}
+
+#change .holder {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  margin-left: -20px;
+}
+#change a {
+  position: absolute;
+  top: -500px;
+  left: -120px;
+  height: 20px;
+  width: 40px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  
+}
+
+
+.holder img {
+  
+ border-radius:10px;
+  
+}
+
+.logoDiv {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.logoDiv img {
+  display: inline;
+  margin: 0 auto;
+  height: 97%;
+  width: auto;
+}
+
+.logoSpinner {
+  position: relative;
+}
+
+.logoDivContainer {
+  position:absolute;
+  top: -10%;
+  left: 60%;
+  overflow-x: hidden;
+}
+
+
+.logo {
+  /* display: inline;
+  margin: 0 auto;
+  margin-left: -25%; 
+  height: 100%;
+  width: auto; */
+}
+.wrap {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+    </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div id='change'>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/8-decent-work-and-economic-growth/' id='button0'><img src="assets/images/shape-8.svg" class="rotatorImage" ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/9-industry-innovation-and-infrastructure/' id='button0'><img src="assets/images/shape-9.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/10-reduced-inequalities/' id='button0'><img src="assets/images/shape-10.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/11-sustainable-cities-and-communities/' id='button0'><img src="assets/images/shape-11.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/12-responsible-consumption-and-production/' id='button0'><img src="assets/images/shape-12.svg" class="rotatorImage" ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/13-climate-action/' id='button0'><img src="assets/images/shape-13.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/14-life-below-water/' id='button0'><img src="assets/images/shape-14.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/15-life-on-land/' id='button0'><img src="assets/images/shape-15.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/16-peace-justice-and-strong-institutions/' id='button0'><img src="assets/images/shape-16.svg" class="rotatorImage"   ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/17-partnerships-for-the-goals/' id='button0'><img src="assets/images/shape-17.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/1-no-poverty/' id='button0'><img src="assets/images/shape-1.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/2-zero-hunger/' id='button0'><img src="assets/images/shape-2.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/3-good-health-and-well-being/' id='button0'><img src="assets/images/shape-3.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/4-quality-education/' id='button0'><img src="assets/images/shape-4.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/5-gender-equality/' id='button0'><img src="assets/images/shape-5.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/6-clean-water-and-sanitation/' id='button0'><img src="assets/images/shape-6.svg" class="rotatorImage"  ></a></div>
+      <div class='holder'><a href='https://www.globalgoals.org/goals/7-affordable-and-clean-energy/' id='button0'><img src="assets/images/shape-7.svg" class="rotatorImage"  ></a></div>
+      
+      <!-- logo -->
+      
+      
+    </div>
+    <!-- <div class="logoDivContainer">
+      <div class="logoDiv">
+        <img class="logo" src="assets/images/sdgAcademyLogo.PNG" alt="" >
+      </div>
+    </div> -->
+  </div>
+    
+      
+
+<script>
+        // setup
+
+
+
+var nav6 = $('#change').children('.holder').each(function(i) {
+TweenLite.set(this, {rotation:21*i});
+}).end();
+
+var tl = new TimelineLite({paused:true});
+var nav = document.getElementById('change')
+
+var gorilla = gsap.to(nav, 60, {rotation:"360", ease:Linear.easeNone, repeat:-1});
+
+
+
+
+$(document).on("mouseenter", ".holder img", function() {
+    tl.pause();
+}).on("mouseleave", ".holder a", function(){
+    tl.play();
+});
+
+
+const draggable = Draggable.create("#change", {
+  type: "rotation",
+  inertia: true,
+  onDrag: function() {
+  gorilla.pause
+  }
+});
+      </script>
+</body>
+</html>
